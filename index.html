@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: calibri;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            /* height: 100vh;
+            width: 100vw; */
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            cursor: pointer;
+        }
+        form input{
+            border-radius: 5px;
+            width: 30vw;
+            height: 5vh;
+            font-family: calibri;
+            font-size: 3.5vh;
+            font-weight: 600;
+            /* padding-left: 3%; */
+            background-color: rgb(255, 255, 255);
+            border: 3px solid rgb(204, 204, 204);
+            margin-bottom: 2%;
+        }
+        ::placeholder{
+            font-weight: 500;
+        }
+        #submit-btn{
+            width: 30.5vw;
+            background-color: blue;
+            color: white;
+            font-size: 3.5vh;
+            height: 6vh;
+            font-weight: 600;
+            border: none;
+        }
+        #submit-btn:hover{
+            opacity: 0.8;
+        }
+        form textarea{
+            font-family: calibri;
+            font-size: 3.2vh;
+            font-weight: 600;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            width: 30vw;
+            height: 40vh;
+            border: 3px solid rgb(204, 204, 204);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1 style="font-size: 4vh;">Drop me a message</h1>
+    
+        <form action="main.php" method="post" autocomplete="off">
+            <input type="text" name="name" placeholder="Your name">
+    
+            <input type="email" name="email" placeholder="Your email">
+    
+            <textarea type="text" name="message" ></textarea>
+    
+            <input type="submit" id="submit-btn" value="Send" placeholder="message">
+        </form>
+    </div>
+</body>
+</html>
+
